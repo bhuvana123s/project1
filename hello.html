@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Demo</title>
+    <style>
+        /* Element Selector */
+        div {
+            background-color: #f0f0f0; /* Light gray background for all divs */
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* ID Selector */
+        #myUniqueDiv {
+            background-color: lightblue; /* Light blue background for the div with id="myUniqueDiv" */
+            border: 2px solid blue;
+        }
+
+        /* Class Selector */
+        .highlight {
+            color: red; /* Red text for elements with class="highlight" */
+            font-weight: bold;
+        }
+
+        /* Grouping Selector */
+        h1, h2, h3 {
+            color: green; /* Green color for all h1, h2, and h3 elements */
+        }
+
+        /* Attribute Selector */
+        a[target="_blank"] {
+            text-decoration: underline; /* Underline links that open in a new tab */
+        }
+
+        /* Pseudo-classes */
+        a:hover {
+            color: orange; /* Orange color for links on mouse hover */
+        }
+
+        a:active {
+            color: purple; /* Purple color for links when clicked */
+        }
+
+        ul li:first-child{
+            color:brown; /* Brown color for first li element in every ul */
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>CSS Selector Demonstration</h1>
+
+    <div id="myUniqueDiv">This is a div with a unique ID.</div>
+
+    <div>This is a regular div.</div>
+
+    <div>This is another regular div.</div>
+
+    <p class="highlight">This is a paragraph with the highlight class.</p>
+
+    <p>This is a regular paragraph.</p>
+
+    <h2>This is a heading.</h2>
+    <h3>This is a subheading.</h3>
+
+    <ul>
+        <li>Item 1</li>
+        <li class="highlight">Item 2 (highlighted)</li>
+        <li>Item 3</li>
+    </ul>
+
+    <a href="https://www.example.com" target="_blank">Link to Example (opens in new tab)</a><br>
+    <a href="https://www.google.com">Link to Google</a>
+
+
+    <div>
+        <span>This is a span inside a div.</span>
+    </div>
+
+</body>
+</html>
